@@ -27,20 +27,14 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- FALHA PROPOSITAL (SCA): versao vulneravel a Log4Shell (CVE-2021-44228 / CVE-2021-45046) -->
+        <!-- Versao corrigida: resolve CVE-2021-44228, CVE-2021-45046 e CVE-2021-45105 (Log4Shell) -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.14.1</version>
+            <version>2.17.1</version>
         </dependency>
 
-        <!-- FALHA PROPOSITAL: dependencia adicionada mas nunca utilizada no codigo -->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.10.1</version>
-        </dependency>
-             
+        <!-- Dependencia removida: gson duplicado -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
